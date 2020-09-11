@@ -227,6 +227,3 @@ def decompress(data, dataAlign, tree, treeAlign):
     a = frombinary(data,dataAlign)
     b = frombinary(tree,treeAlign)
     return (decodedata(decodetree(b),a))
-
-((dataComp, align), (treeComp, alignTree)) = compress("um ah human huffman is fun i am a fan ha ha ha ha ha ha")
-print(decompress(dataComp, align,treeComp, alignTree))
